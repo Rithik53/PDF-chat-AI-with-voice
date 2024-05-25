@@ -8,14 +8,14 @@ Multiple Voice Options: Choose between male and female voices for the audio resp
 Automatic Audio Playback: Responses are played automatically without needing user intervention.
 
 ## Requirements
-Python 3.7 or higher
-Streamlit
-Boto3
-dotenv
-langchain
-langchain_community
-numpy
-PyPDF2
+Python 3.7 or higher,
+Streamlit,
+Boto3,
+dotenv,
+langchain,
+langchain_community,
+numpy,
+PyPDF2,
 IPython
 
 
