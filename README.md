@@ -1,13 +1,13 @@
-#PDF Conversationalist
+# PDF Conversationalist
 PDF Conversationalist is an AI-powered application that enables you to interact with the content of your PDF files using natural language queries. By leveraging AWS Bedrock and Amazon Polly, the application provides detailed answers to your questions and reads them out loud in your chosen voice.
 
-##Features
+## Features
 Natural Language Processing: Ask questions about the content of your PDF files and get detailed, context-aware answers.
 Voice Responses: Hear the answers read out loud using Amazon Polly.
 Multiple Voice Options: Choose between male and female voices for the audio responses.
 Automatic Audio Playback: Responses are played automatically without needing user intervention.
 
-##Requirements
+## Requirements
 Python 3.7 or higher
 Streamlit
 Boto3
@@ -19,48 +19,47 @@ PyPDF2
 IPython
 
 
-##Installation
+## Installation
 Clone the repository:
-
-sh
-git clone https://github.com/your-username/pdf-conversationalist.git
-cd pdf-conversationalist
+``` sh
+git clone https://github.com/Rithik53/PDF-chat-AI-with-voice.git
+cd PDF-chat-AI-with-voice
+```
 Create a virtual environment and activate it:
 
-sh
+``` sh
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
 Install the required packages:
 
-sh
+``` sh
 pip install -r requirements.txt
+```
 Set up your environment variables:
 Create a .env file in the root directory and add your AWS credentials and ElevenLabs API key:
 
-##makefile
-Copy code
+```makefile
 AWS_ACCESS_KEY_ID=your_aws_access_key_id
 AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
 ELEVENLABS_API_KEY=your_elevenlabs_api_key
-
-##Usage
+```
+## Usage
 Data Ingestion:
 Ensure your PDF files are in a directory named data in the root of the project.
 
 ##Run the Application:
-
-sh
-Copy code
+```sh
 streamlit run app.py
-
-##Interact with the Application:
+```
+## Interact with the Application:
 
 Navigate to the Streamlit web interface.
 Use the sidebar to update or create the vector store from the PDF files.
 Ask questions in the text input field and choose the voice for audio responses.
 Click on "Claude Output" or "Llama2 Output" to get answers and hear them read out loud.
 
-##Components
+## Components
 Data Ingestion
 The application loads PDF files from the data directory and splits the text into manageable chunks for processing.
 
@@ -84,9 +83,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 License
 This project is licensed under the MIT License.
 
-##Acknowledgements
-AWS Bedrock
-Amazon Polly
-Streamlit
-LangChain
+## Acknowledgements
+AWS Bedrock,
+Amazon Polly,
+Streamlit,
+LangChain,
 ElevenLabs
